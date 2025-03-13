@@ -41,25 +41,25 @@ while True:
   if choice == 1:
     something = dataset.sort_values(by = 'Year', ascending = True)
     break
-  if choice == 2:
+  elif choice == 2:
     something = dataset.sort_values(by = 'NA_Sales', ascending = False)
     break
-  if choice == 3:
+  elif choice == 3:
     something = dataset.sort_values(by = 'EU_Sales', ascending = False)
     break
-  if choice == 4:
+  elif choice == 4:
     something = dataset.sort_values(by = 'JP_Sales', ascending = False)
     break
-  if choice == 5:
+  elif choice == 5:
     something = dataset[dataset['Year'] > 2002]
     break
-  if choice == 6:
+  elif choice == 6:
     something = dataset[dataset['Year'] < 2002]
     break
-  if choice == 7:
+  elif choice == 7:
     something = dataset[dataset['NA_Sales'] > 10]
     break
-  if choice == 8:
+  elif choice == 8:
     something = dataset[dataset['EU_Sales'] < 12]
     break
 something
